@@ -1,0 +1,337 @@
+@import url('https://rsms.me/inter/inter.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 span {
+    display: inline-flex;
+}
+h1 span:nth-child(even) {
+    overflow: hidden;
+    transition: 0.8s;
+    letter-spacing: -1em;
+}
+
+h1:hover span:nth-child(even) {
+    letter-spacing: 0;
+}
+
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+    /* navigationsbar */
+.index {
+    min-height: 100vh;
+    background-image: url(../billeder/forside.png);
+    background-size: cover;
+    background-position: center;
+}
+.portfolio {
+    min-height: 100vh;
+    background-image: url(../billeder/portfolio.png);
+    background-size: cover;
+    background-position: center;
+}
+.om_mig {
+    min-height: 100vh;
+    background-image: url(../billeder/om_mig.png);
+    background-size: cover;
+    background-position: center;
+}
+.kontakt {
+    min-height: 100vh;
+    background-image: url(../billeder/kontakt.png);
+    background-size: cover;
+    background-position: center;
+}
+.photoshop {
+    min-height: 100vh;
+    background-image: url(../billeder/photoshop.png);
+    background-size: cover;
+    background-position: center;
+}
+.videoer {
+    min-height: 100vh;
+    background-image: url(../billeder/videoer.png);
+    background-size: cover;
+    background-position: center;
+}
+.webdesign {
+    min-height: 100vh;
+    background-image: url(../billeder/webdesign.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.navigationbar{
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+    padding: 35px 80px;
+    text-align: right;
+    position: fixed;
+}
+
+.navigationbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navigationbar ul li a{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+.active {
+    color:  #F88A1C !important;
+}
+
+.navigationbar ul li::after{
+    content: " ";
+    height: 4px;
+    width: 0;
+    background:rgb(248, 138, 28);
+    position: absolute;
+    left: 0%;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.navigationbar ul li:hover::after {
+    width: 100%;
+}
+
+
+
+    /* forside */
+
+.hovedtitel {
+    margin: auto;
+    padding: 250px;
+    text-align: center;
+}
+.hovedtitel h1{
+    padding-top: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 130px;
+    color: rgb(255, 255, 255);
+    
+    /* hvis jeg skal prøve på en anden måde */
+    /* text-decoration: underline;
+     */
+}
+
+.hovedtitel p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+}
+
+
+.firkant {
+  height: 10px;
+  margin: 0 auto;
+  background-color: #F88A1C;
+  border-radius: 6px;
+}
+
+/* Undersider */
+.undersider {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-self: center;
+    padding: 80px;
+    padding-top: 120px;
+    }
+
+.undersider h3{
+    padding-top: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 70px;
+    text-align: left;
+    color: rgb(248 , 138, 28);
+}
+
+.undersider h2{
+    padding-top: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 130px;
+    text-align: left;
+    color: rgb(248 , 138, 28);
+}
+
+
+.textarea  {  
+    font-family: 'Inter', sans-serif;
+}
+    
+.undersider p {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+}
+
+.billede_af_mig{
+    display: flex;
+    justify-content: center;
+}
+
+.billede_af_mig img{
+    max-width: 650px;
+    padding-top: 40px;
+    border-radius: 100%;
+}
+
+.om_mig_content{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.om_mig_content a{
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    font-family:'Montserrat', sans-serif;
+    color: white;
+}
+
+
+/* kontakt side */
+
+.form-container{
+    display: flex;
+    justify-content: center;
+}
+
+
+.form {
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin-top: 10%;
+}
+
+
+
+.form input, .form textarea{
+    width: 650px;
+    margin: 5px 0 10px;
+    padding: 14px;
+    border-radius: 0 12px;
+    border: none;
+    resize: none;
+}
+
+.form textarea{
+    margin-bottom: 20px;
+}
+
+.form label {
+    font-family:'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.button {
+    width: fit-content;
+    background-color: #F88A1C;
+    color: white;
+    font-size: 20px;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 700;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0 24px;
+}      
+.button:hover {
+    padding: 15px 30px;
+}      
+
+
+.portfolio-image-grid {
+    display: grid;
+    justify-content: center;
+    padding-top: 100px;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: 200px 200px;
+    gap: 32px;
+    grid-template-areas:
+    ". big big"
+    ". big big";
+}
+
+
+.portfolio-image-grid .highlight{
+    grid-area: big;
+}
+
+.portfolio-image-grid.omvendt {
+    grid-template-areas:
+    "big big ."
+    "big big .";
+}
+
+
+    /* Hvis der kun skal være et billede */
+    
+/* .portfolio-image-grid.et-billede {
+    grid-template-areas:
+    "big";
+} */
+
+
+.portfolio-image-grid-omvendt .highlight{
+    grid-area: big;
+}
+
+.button-portfolio {
+    width: fit-content;
+    background-color: #F88A1C;
+    color: white;
+    font-size: 20px;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 700;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0 24px;
+    text-decoration: none;
+}      
+.button-portfolio:hover {
+    padding: 15px 30px;
+}   
+/* Portfolio undersider */
+
+.portfolio-undersider {
+    padding: 20px;
+    color: #F88A1C;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.content-gap{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.tilbage-knap {
+    color: #F88A1C;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
